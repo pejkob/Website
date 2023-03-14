@@ -1,0 +1,20 @@
+﻿<Window x:Class="sudokuGUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:sudokuGUI"
+        mc:Ignorable="d"
+        Title="Sudoku-ellenőrző" Height="210" Width="540">
+    <Grid>
+        <Label Content="Új feladvány mérete:" HorizontalAlignment="Left" Margin="17,29,0,0" VerticalAlignment="Top"/>
+        <Button Content="-" Click="MeretModositas" HorizontalAlignment="Left" Margin="142,30,0,0" VerticalAlignment="Top" Width="17" />
+        <TextBox Name="MeretBox" HorizontalAlignment="Left" Height="23" Margin="164,30,0,0" TextWrapping="Wrap" Text="4" TextAlignment="Center" VerticalAlignment="Top" Width="24" IsReadOnly="True"/>
+        <Button Content="+" Click="MeretModositas" HorizontalAlignment="Left" Margin="193,30,0,0" VerticalAlignment="Top" Width="17"/>
+        <Label Content="Kezdőállapot:" HorizontalAlignment="Left" Margin="17,79,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="KezdoAllapot" TextChanged="HosszFrissites" HorizontalAlignment="Left" Height="23" Margin="21,107,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="490"/>
+        <Label Name="HosszCimke" Content="Hossz: 0" HorizontalAlignment="Left" Margin="17,130,0,0" VerticalAlignment="Top"/>
+        <Button Content="Ellenőrzés" Click="Ellenorzes" HorizontalAlignment="Left" Margin="436,139,0,0" VerticalAlignment="Top" Width="75"/>
+
+    </Grid>
+</Window>
